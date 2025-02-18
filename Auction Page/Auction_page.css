@@ -1,0 +1,15 @@
+
+*{
+    margin: auto;
+}
+
+
+div{
+    background-color: black;
+    color:white;
+    width: 300px;
+    height: 200px;
+    font-size: 25px;
+    margin: auto;
+    text-align: center;
+}

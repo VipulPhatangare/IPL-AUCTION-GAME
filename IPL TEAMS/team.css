@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+head #logo{
+    border-radius: 50%;
+}
+
+
+body{
+    background-color:  #0A1931;
+}
+
+a{
+    font-size: 25px;
+    text-decoration-line: none;
+    font-weight: 700;
+    color: white;
+    
+}
+
+.main_div{
+    background-color: #0A1931;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#nav_team_name{
+    font-size: 50px;
+    color:#0e5490;
+    font-weight: bold;
+    text-shadow: 0px 8px 15px white;
+}
+
+#nav_bar{
+    background-color:#facd06;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top:0;
+    z-index: 1;
+}
+
+
+
+#nav_bar img{
+    height: 70px;
+    width: 70px;
+    border-radius: 0%;
+}
+
+
+#Players{
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    scrollbar-width: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.player_card_container {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center; 
+}
+
+
+.cards {
+    min-width: 200px;
+    max-width: 200px; /* Ensures cards stay inline */
+    height: auto;
+    flex: 1;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0c6cfc;
+    align-items: center;
+    padding-top: 5px;
+    
+}
+
+.cards:hover{
+    transform: scale(103%);
+    box-shadow: 0 0 10px white;
+}
+
+.cards img{
+    height: 50%;
+    width: 95%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.cards a{
+    font-size: 17px;
+    font-weight: 700;
+    padding-top: 10px; 
+    padding-bottom: 0;
+}
+
+
+br{
+    padding: 20px;
+}
+
+
