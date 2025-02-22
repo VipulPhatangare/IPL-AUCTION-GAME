@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left to Right Animation</title>
+    <style>
+        .moving-box {
+            width: 100px;
+            height: 50px;
+            background-color: royalblue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: moveRight 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes moveRight {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="moving-box">Move</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
