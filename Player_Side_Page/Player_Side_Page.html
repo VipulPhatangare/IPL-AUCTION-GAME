@@ -35,7 +35,7 @@
                 
             </div>
 
-            <div class="side_bar_buttons">
+            <div class="side_bar_buttons" id="total_squad_of_team" onclick="navigate_to_team_page('CSK')">
                 <a href="#">Squad</a>
             </div>
 
@@ -50,6 +50,15 @@
             <div class="side_bar_buttons">
                 <a href="#">Unsold Players</a>
             </div>
+
+            <div class="side_bar_buttons">
+                <a href="#">Player Constraints</a>
+            </div>
+
+            <div class="side_bar_buttons">
+                <a href="#">Expenditure</a>
+            </div>
+            
 
         </div>
 
@@ -100,9 +109,326 @@
                 <a href="#">PBKS</a>
             </div>
 
+            
+
+        
         </div>
 
-    </div>
+        <div id="player_squad_count">
+
+            <a href="#">Batters</a>
+            
+            <table class="table">
+                <tr>
+                    <th>Player Type</th>
+                    <th>In Squad</th>
+                    <th>Minimum</th>
+                </tr>
+                
+                <tr>
+                    <td>Indian Cap</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td>Indian Uncap</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td>Overseas</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                
+            </table>
+
+            <a href="#">Bowlers</a>
+            
+            <table class="table">
+                <tr>
+                    <th>Player Type</th>
+                    <th>In Squad</th>
+                    <th>Minimum</th>
+                </tr>
+                
+                <tr>
+                    <td>Indian Cap</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td>Indian Uncap</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td>Overseas</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                
+            </table>
+
+            <a href="#">All-Rounders</a>
+            
+            <table class="table">
+                <tr>
+                    <th>Player Type</th>
+                    <th>In Squad</th>
+                    <th>Minimum</th>
+                </tr>
+                
+                <tr>
+                    <td>Indian Cap</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td>Indian Uncap</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td>Overseas</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                
+            </table>
+
+
+            <a href="#">Wicket-Kepper</a>
+            
+            <table class="table">
+                <tr>
+                    <th>In Squad</th>
+                    <th>Minimum</th>
+                </tr>
+                
+                <tr>
+                    <td>0</td>
+                    <td>2</td>
+                </tr>
+            </table>
+
+            
+            <a href="#">Overseas</a>
+            
+            <table class="table">
+                <tr>
+                    <th>In Squad</th>
+                    <th>Maximum</th>
+                </tr>
+                
+                <tr>
+                    <td>0</td>
+                    <td>7</td>
+                </tr>
+            </table>
+
+            <div style="height: 100px;"></div>
+
+        </div>
+
+
+        <div id="Current_bid_player">
+            <div>
+                <div id="bid_price_con">
+                    <a href="#">Current Bid :</a>
+                    <a href="#" id="price">20.50cr</a>
+                </div>
+        
+                <div class="player_card_container" id="batters">
+                    <div class="cards">
+                        <img src="./assets/csk_logo.jpg" alt="">
+                        <a href="#">Player Name</a>
+                        <a href="#">Country</a>
+                        <a href="#">RBH/LBH</a>
+                        <a href="#">BALLING TYPE</a>
+                        <a href="#">POINTS :</a>
+                        <a href="#">BASE PRICE : 2CR</a>
+                        <div class="sold-stamp" id="soldStamp">SOLD</div> 
+                        <div class="sold-stamp" id="unsoldStamp">UNSOLD</div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="bid_team_con">
+                <a href="#" id="bid_team">CSK</a>
+            </div>
+        
+        </div>
+        
+        <!-- <button id="soldBtn">Mark as Sold</button>
+        <button id="unsoldBtn">Mark as Unsold</button> -->
+
+
+        <div id="our_buys">
+
+            <div id="purse">
+                Remaining Purse : 110.50cr
+            </div>
+            <hr>
+            <div id="total_points">
+                Total Points : 1000
+            </div>
+            <hr>
+
+            <div>
+                <a href="#">Buys</a>
+            </div>
+
+            <div id="buys">
+
+                <div class="buys_card">
+                    <a href="#">Player Name 1</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+                <div class="buys_card">
+                    <a href="#">Player Name</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+                <div class="buys_card">
+                    <a href="#">Player Name</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+
+                <div class="buys_card">
+                    <a href="#">Player Name</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+                <div class="buys_card">
+                    <a href="#">Player Name</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+                <div class="buys_card">
+                    <a href="#">Player Name</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+                <div class="buys_card">
+                    <a href="#">Player Name</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+                <div class="buys_card">
+                    <a href="#">Player Name</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+
+                <div class="buys_card">
+                    <a href="#">Player Name</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+
+                <div class="buys_card">
+                    <a href="#">Player Name</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+                <div class="buys_card">
+                    <a href="#">Player Name</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+
+                <div class="buys_card">
+                    <a href="#">Player Name</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+                <div class="buys_card">
+                    <a href="#">Player Name</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+
+                <div class="buys_card">
+                    <a href="#">Player Name</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+                <div class="buys_card">
+                    <a href="#">Player Name</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+                <div class="buys_card">
+                    <a href="#">Player Name</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+
+                <div class="buys_card">
+                    <a href="#">Player Name</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+
+                <div class="buys_card">
+                    <a href="#">Player Name4</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+
+                <div class="buys_card">
+                    <a href="#">Player Name6</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+                <div class="buys_card">
+                    <a href="#">Player Name7</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+                <div class="buys_card">
+                    <a href="#">Player Name8</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+                <div class="buys_card">
+                    <a href="#">Player Name8</a>
+                    <a href="#">20.50cr</a>
+                </div>
+
+                <div class="buys_card">
+                    <a href="#">Player Name18</a>
+                    <a href="#">20.50cr</a>
+                </div>
+                <br>
+                <br>
+                
+                
+
+            </div>
+
+        </div>
+
+
     <script src="Player_Side_Page.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

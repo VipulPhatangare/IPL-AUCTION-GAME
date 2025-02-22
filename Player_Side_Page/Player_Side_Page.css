@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    scrollbar-width: none;
 }
 
 head #logo{
@@ -89,6 +90,7 @@ i{
     display: flex; /*flex*/
     flex-direction: column;
     gap: 10px;
+    z-index: 5;
 }
 
 #left_side_bar{
@@ -134,6 +136,7 @@ i{
 
 #retention_side_bar{
     display: none; /*flex*/
+    z-index: 6;
 }
 
 
@@ -164,4 +167,225 @@ i{
 .retention_buttons:hover{
     box-shadow: 0 0 5px white;
     border-radius: 5px;
+}
+
+
+
+
+
+#player_squad_count{
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top:80px;
+    background-color: #1c3c8b;
+    text-align: center;
+    padding: 10px 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+
+.table{
+    margin: 10px 0 ;
+    margin-left: 10px;
+    padding: 10px 0;
+    width: 330px;
+    color: white;
+    border-collapse: collapse;
+    /* border: 2px solid white; */
+}
+
+.table td, th{
+    border: 1px solid white; 
+    padding: 8px;
+    text-align: center;
+}
+
+
+#Current_bid_player{
+    width: 350px;
+    height: 510px;
+    background-color: #0c6cfc;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 15px;
+    border-radius: 5px;
+}
+
+.sold-stamp {
+    display: none;  /* Initially hidden */
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-20deg);
+    background: red;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 3px solid white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    z-index: 10;
+    opacity: 0.9;
+
+}
+
+
+#soldBtn{
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    display: none;
+}
+
+#unsoldBtn{
+    position: fixed;
+    top: 130px;
+    left: 0px;
+    display: none;
+}
+
+
+
+.cards {
+    min-width: 200px;
+    max-width: 200px; /* Ensures cards stay inline */
+    height: auto;
+    flex: 1;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0c6cfc;
+    align-items: center;
+    padding-top: 5px;
+    position: relative;
+    
+}
+
+
+
+.cards img{
+    height: 50%;
+    width: 95%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.cards a{
+    font-size: 17px;
+    font-weight: 700;
+    padding-top: 10px; 
+    padding-bottom: 0;
+}
+
+#price{
+    font-size: 50px;
+    color: #facd06;
+    text-shadow: 0 0 8px black;
+}
+
+#bid_price_con{
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bid_team_con{
+    background-color: #facd06;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    align-content: center;
+}
+
+#bid_team{
+    color: #0e5490;
+    text-shadow: 0 0 6px white;
+    font-size: 30px;
+}
+
+
+#our_buys{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 350px;
+    height: 100vh;
+    background-color: #1c3c8b;
+    display: flex; /*flex*/
+    flex-direction: column;
+    gap: 10px;
+    
+    padding: 10px 0;
+}
+
+#our_buys div{
+    color: white;
+    font-size: 24px;
+    align-content: center;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+#buys {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    max-height: 500px; /* Set max height for scroll */
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 95%;
+    padding: 10px;
+   
+   
+}
+
+.buys_card {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.buys_card:hover {
+    background-color: #ffeb3b; /* Highlight on hover */
+    cursor: pointer;
+    color: #0e5490;
+}
+
+.buys_card:hover a{
+    color: #0e5490;
+}
+
+
+.buys_card a {
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;   
+}
+
+.buys_card a:first-child {
+    font-weight: bold; /* Make player name bold */
 }
