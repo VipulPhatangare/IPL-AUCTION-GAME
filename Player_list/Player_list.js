@@ -222,19 +222,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(player_list_type.Batter){
         update_player_info('batters', player_list_type.Batter)
-    }
+    };
 
     if(player_list_type.Bowler){
         update_player_info('bowlers', player_list_type.Bowler)
-    }
+    };
 
     if(player_list_type.All_rounder){
         update_player_info('all_rounders', player_list_type.All_rounder)
-    }
+    };
 
     if(player_list_type.Wicketkeeper){
         update_player_info('wicketkeepers', player_list_type.Wicketkeeper)
-    }
+    };
 
     
     let cardObj = document.querySelectorAll(".cards");
